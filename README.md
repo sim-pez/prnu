@@ -100,4 +100,4 @@ The main tools used in this work:
 
 
 # Acknowledgments
-Image and Video Analysis project - Computer Engineering Master Degree @[University of Florence](https://www.unifi.it/changelang-eng.html)
+Elaborazione e Protezione delle Immagini - Computer Engineering Master Degree @[University of Florence](https://www.unifi.it/changelang-eng.html)
