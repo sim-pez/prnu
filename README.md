@@ -58,10 +58,10 @@ The respository is structured as follows:
 └── test
     ├── data
     │   ├── ff
-    │   │   ├── Nikon_D200_0_15871.JPG
+    │   │   ├── D08_I_t_0011.jpg
     │   │   ├── ...
     │   └── nat
-    │       ├── D02_I_t_0001.jpg
+    │       ├── D08_I_t_0062.jpg
     │       ├── ...
     ├── __init__.py
     └── test_prnu.py
