@@ -48,10 +48,10 @@ def main():
     print('Remove zero mean: ' + str(remove_zero_m))
     print('Remove wiener: ' + str(remove_wiener) + '\n')
 
-    ff_dirlist = np.array(sorted(glob('test/data/ff-revision-2/*.jpg')))
+    ff_dirlist = np.array(sorted(glob('test/data/ff/*.jpg')))
     ff_device = np.array([os.path.split(i)[1].rsplit('_', 1)[0] for i in ff_dirlist])
 
-    nat_dirlist = np.array(sorted(glob('test/data/nat-revision-2/*.jpg')))
+    nat_dirlist = np.array(sorted(glob('test/data/nat/*.jpg')))
     nat_device = np.array([os.path.split(i)[1].rsplit('_', 1)[0] for i in nat_dirlist])
 
     print('Computing fingerprints')
