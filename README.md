@@ -31,7 +31,7 @@ The respository is structured as follows:
 - ```example.py``` is the script used to test and evaluate the PCE.
 - The ```plots/``` directory contains bar plots for each device showing PRNU, TPR and FPR values. This folder is divided in 3 subdirectories, one for each denoiser. Each subdirectory has one bar plot for each device.
 - ```prnu/``` contains the noise extraction functions (original, VDNet and VDID).
-- ```test/``` will contain your dataset: flat images must be placed in the ```ff/``` dubdirectory and query images in ```nat/``` subdirectory.
+- ```test/``` will contain your dataset: flat images must be placed in the ```ff/``` subdirectory and query images in ```nat/``` subdirectory.
 
 ```
 .
