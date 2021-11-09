@@ -123,7 +123,11 @@ The main tools used in this work:
 - VDID: a bayesian framework for denoising that can handle blind scenarios.
 - VDNet: uses a variational inference for non-iid  real-noise estimation and image denoising in a unique Bayesian Network.
 - PyCharm is an integrated development environment used in computer programming, specifically for the Python language [6].
-- Computersss.
+- Computer:
+    - Operating System: Ubuntu 20.04.2 LTS
+    - CPU:  Intel(R) Core(TM) i9-7940X CPU @ 3.10GHz
+    - GPU: Nvidia Quadro P6000 with 24GB
+    - RAM: 128GB.
 
 # Bibliography
 \[1\] https://github.com/zsyOAOA/VDNet
