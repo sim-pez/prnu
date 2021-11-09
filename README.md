@@ -38,13 +38,13 @@ The respository is structured as follows:
 ├── example.py
 ├── plots
 │   ├── original
-│   │   ├── D03_I_t.png
+│   │   ├── D08_I_t_.png
 │   │   ├── ...
 │   ├── vdid
-│   │   ├── D03_I_t.png
+│   │   ├── D08_I_t_.png
 │   │   ├── ...
 │   └── vdnet
-│       ├── D03_I_t.png
+│       ├── D08_I_t_.png
 │       ├── ...
 ├── prnu
 │   ├── functions.py
