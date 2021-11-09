@@ -33,6 +33,42 @@ The respository is structured as follows:
 - ```example.py``` is the script used to test and evaluate the PCE.
 - ```test/``` will contain your dataset: flat images must be placed in the ```ff/``` dubdirectory and query images in ```nat/``` subdirectory.
 
+```
+.
+├── example.py
+├── plots
+│   ├── original
+│   │   ├── D03_I_t.png
+│   │   ├── ...
+│   ├── vdid
+│   │   ├── D03_I_t.png
+│   │   ├── ...
+│   └── vdnet
+│       ├── D03_I_t.png
+│       ├── ...
+├── prnu
+│   ├── functions.py
+│   ├── __init__.py
+│   ├── VDIR
+│   │   ├── ...
+│   └── VDNet
+│       ├── ...
+├── README.md
+├── requirements.txt
+└── test
+    ├── data
+    │   ├── ff
+    │   │   ├── Nikon_D200_0_15871.JPG
+    │   │   ├── ...
+    │   └── nat
+    │       ├── D02_I_t_0001.jpg
+    │       ├── ...
+    ├── __init__.py
+    └── test_prnu.py
+
+
+```
+
 ## Installation
 
 ```
@@ -65,7 +101,7 @@ optional arguments:
 
 ## Example
 ### 
-- Following this example you will get the PCE using VDNet to extract the noise from images and without Wiener filter (zero mean normalization will be used).
+- Following this example you will get the PCE using VDNet as noise extractor and without Wiener filter (zero mean normalization will be used).
 ```
 python3 example.py -denoiser vnet -rm_wiener
 ```
@@ -86,7 +122,7 @@ In ```plots/``` folder there will be a ```VDNet/``` subdirectory with bar plots 
 The main tools used in this work:
 - VDID: a bayesian framework for denoising that can handle blind scenarios.
 - VDNet: uses a variational inference for non-iid  real-noise estimation and image denoising in a unique Bayesian Network.
-- PyCharm is an integrated development environment used in computer programming, specifically for the Python language [8].
+- PyCharm is an integrated development environment used in computer programming, specifically for the Python language [6].
 - Computersss.
 
 # Bibliography
@@ -99,6 +135,8 @@ The main tools used in this work:
 \[4\] https://lesc.dinfo.unifi.it/
 
 \[5\] Jessica   Fridrich   Jan   Lukas   and   Miroslav   Goljan. "[Digital Camera Identification From Sensor Pattern Noise](http://ws2.binghamton.edu/fridrich/Research/double.pdf)", in: *IEEE TRANSACTIONS ON INFORMATION FORENSICS AND SECURITY* In 2006.
+
+\[6\] https://www.jetbrains.com/pycharm/
 
 
 # Acknowledgments
