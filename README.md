@@ -126,7 +126,7 @@ The main tools used in this work:
 - Computer:
     - Operating System: Ubuntu 20.04.2 LTS
     - CPU:  Intel(R) Core(TM) i9-7940X CPU @ 3.10GHz
-    - GPU: Nvidia Quadro P6000 with 24GB
+    - GPU: one Nvidia Quadro P6000 with 24GB and four GeForce RTX 2080 with 12GB each.
     - RAM: 128GB.
 
 # Bibliography
