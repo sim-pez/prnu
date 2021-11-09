@@ -28,8 +28,10 @@ For the experiments we used the VISION dataset providedby LESC laboratory [4]. I
 
 # Repository structure
 The respository is structured as follows:
-- The ```Dataset/Videos/``` directory contains all user and trainer ```.mp4``` videos.
-- ```Dataset/Frames/``` will contain all the frames extracted from the videos.
+- The ```plots/``` directory contains bar plots for each device showing PRNU, TPR and FPR values. This folder is divided in 3 subdirectories, one for each denoiser. Each subdirectory has one bar plot for each device.
+- ```PRNU/``` contains the noise extraction functions (original, VDNet and VDID).
+- ```example.py``` is the script used to test and evaluate the PCE.
+- ```test/``` will contain your dataset: flat images must be placed in the ```ff/``` dubdirectory and query images in ```nat/``` subdirectory.
 
 ## Installation
 
