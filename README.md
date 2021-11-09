@@ -40,38 +40,38 @@ pip3 install -r requirements.txt
 ```
 
 ## Usage
-- Replace ```.txt``` files with your ```.mp4``` videos in ```Dataset/Videos/```. You can **ignore this step**, in this case pre-extracted skeletons will be used (located in  ```Dataset/Skeletons/```).
+Run ```example.py``` to evaluate the PCE
 
 ```
-python3 Autoencoder.py <---optional
+python3 example.py
 ```
 
-
-- Compute ROC
+Compute PCE
 ```
-Usage: 
-  computeROC.py [-h] [-space SPACE] [-metric METRIC] [-exer EXER] [-best_weights] [-silent]
+usage: example.py [-h] [-denoiser DENOISER] [-rm_zero_mean] [-rm_wiener]
 
-This program compute ROC graph given a space, a metric and an exercise.
+This program extracts camera fingerprint using VDNet and VDID and compares
+them with the original implementation
 
 optional arguments:
-  -h, --help      show this help message and exit
-  -space SPACE    [r3n | latent(default) | gram]
-  -metric METRIC  [custom-median-euclidean(default) | median-euclidean | euclidean]: specify it if space=r3n or space=latent
-  -exer EXER      [armclap(default) | singlelunges | doublelunges | dumbbellcurl | pushup | squat]
-  -best_weights   choose the best weights for exercise if space=latent
-  -silent         suppress all prints and plots performed by computeROC.py
+  -h, --help          show this help message and exit
+  -denoiser DENOISER  [original (default) | vdnet | vdid]
+  -rm_zero_mean       Removes zero mean normalization
+  -rm_wiener          Removes Wiener filter
 
 ```
 
-## Examples
-### - Latent dimention (using best weights)
-- Following this example you will get the ROC function using latent space, custom median  euclidean metric and the best weights to perform the classification task for the specified exercise. 
+## Example
+### 
+- Following this example you will get the PCE using VDNet to extract the noise from images and without Wiener filter (zero mean normalization will be used).
 ```
-python3 computeROC.py -space latent -metric custom-median-euclidean -exer armclap -best_weights
+python3 example.py -denoiser vnet -rm_wiener
 ```
 #### Output
-Output
+In ```plots/``` folder there will be a ```VDNet/``` subdirectory with bar plots showing TPR's values for each device:
+<p float="left" align="center">
+  <img src="docs/D27_I_t.png" width="50%"  />
+</p>
 
 
 
