@@ -103,7 +103,7 @@ optional arguments:
 ### 
 - Following this example you will get the PCE using VDNet as noise extractor and without Wiener filter (zero mean normalization will be used).
 ```
-python3 example.py -denoiser vnet -rm_wiener
+python3 example.py -denoiser vdnet -rm_wiener
 ```
 #### Output
 In ```plots/``` folder there will be a ```VDNet/``` subdirectory with bar plots showing TPR's values for each device:
