@@ -24,7 +24,7 @@ The objective is formulated in terms of **maximum a posterior** (MAP) inference.
 Based on the latent space, VDID can focus on simpler subdistributions of the original problem.
 
 # Dataset
-For the experiments we used the **VISION dataset** providedby LESC laboratory [4]. It contains about 30 devices and for each device there are flat and not saturated images from which the reference fingerprints are extracted. Each of them is then compared with 20 natural image query fingerprints.
+For the experiments we used the **VISION dataset** providedby LESC laboratory [4]. It contains about 30 devices and for each device there are flat and not saturated images from which the reference fingerprints are extracted. Each of them is then compared with 20 natural image query fingerprints from all other devices.
 
 # Repository structure
 The respository is structured as follows:
