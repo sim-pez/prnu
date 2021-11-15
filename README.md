@@ -48,7 +48,6 @@ The respository is structured as follows:
 │       ├── ...
 ├── prnu
 │   ├── functions.py
-│   ├── __init__.py
 │   ├── VDIR
 │   │   ├── ...
 │   └── VDNet
@@ -63,7 +62,6 @@ The respository is structured as follows:
     │   └── nat
     │       ├── D08_I_t_0062.jpg
     │       ├── ...
-    ├── __init__.py
     └── test_prnu.py
 
 
