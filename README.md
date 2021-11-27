@@ -113,7 +113,8 @@ In ```plots/``` folder there will be a ```VDNet/``` subdirectory with bar plots 
 
 # Project Documents
 - For a detailed description of the experiments and results obtained refer to the [report](/docs/report.pdf).
-- And also the [presentation](/docs/presentation.pdf)
+- Project [presentation](/docs/final_presentation.pdf)
+- And also the VDID and VDNet [presentation](/docs/presentation.pdf)
 
 
 # Tools and Techniques
