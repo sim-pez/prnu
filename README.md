@@ -1,5 +1,8 @@
 # Camera Identification task using VDNet and VDID
 
+![last commit](https://img.shields.io/github/last-commit/daikon899/PRNU)
+![Python 3.8](https://img.shields.io/github/languages/top/daikon899/PRNU)
+
 - **Academic year:** 2020-2021
 - **Project title:** Camera Identification task using VDNet and VDID
 - **Students:** [Abdullah Chaudhry](https://github.com/chabdullah) and [Simone Pezzulla](https://github.com/daikon899)
