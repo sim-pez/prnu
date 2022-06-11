@@ -2,9 +2,9 @@
 
 
 # Overview
-As  explained  in  [5],  digital  images  and  video  continue  to replace  their  analog  counterparts,  the  importance  of  reliable, inexpensive  and  fast  identification  of  digital  image  origin will  only  increase.  Reliable  identification  of  the  device  used to  acquire  a  particular  digital  image  would  especially  prove useful, for example, in the court for establishing the origin of images presented as evidence.
+As explained in [5], digital images and video continue to replace their analog counterparts and the importance of reliable, inexpensive and fast  identification of digital image origin will only increase. 
 
-This project is based on the work of [2], the goal is to extract sensor’s fingerprint from the captured image and compare this reference with other query  fingerprints in order to perform a camera identification task. As  suggested in [2], they use Photo-Response Non-Uniformity (**PRNU**) extracted from flat and  not  saturated images as a unique fingerprint of digitalcamera and use Peak-correlation-to-correlation-ratio (**PCE**) for the identification task. We use different algorithms in order to extract and compare digital camera fingerprints. In this report we extend the implementation provided in [2] by adding 2 new noise extraction methods: **VDNet**[1] and **VDID**[3]. 
+This project is based on the work of [2], the goal is to extract camera sensor’s fingerprint from captured images and compare this reference to other query  fingerprints in order to perform a camera identification task. We will use Photo-Response Non-Uniformity ([**PRNU**](https://en.wikipedia.org/wiki/Photo_response_non-uniformity)) extracted from flat and not saturated images as a unique fingerprint of digital camera and use Peak-correlation-to-energy (**PCE**) for the identification task. There are several different algorithms to extract fingerprints. In this report we extend the implementation provided in [2] by adding 2 new noise extraction methods: **VDNet**[1] and **VDID**[3]. 
 
 # VDNet
 VDNet uses a variational inference for non-iid real-noise estimation and image denoising in a unique Bayesian Network. Specifically, an approximate posterior, parameterized by deep neural networks, is presented by taking the intrinsic clean image and noise variances as latent variables conditioned on the input noisy image.
@@ -20,7 +20,7 @@ The objective is formulated in terms of **maximum a posterior** (MAP) inference.
 Based on the latent space, VDID can focus on simpler subdistributions of the original problem.
 
 # Dataset
-For the experiments we used the **VISION dataset** providedby LESC laboratory [4]. It contains about 30 devices and for each device there are flat and not saturated images from which the reference fingerprints are extracted. Each of them is then compared with 20 natural image query fingerprints from all other devices.
+For the experiments we used the **VISION dataset** provided by LESC laboratory [4]. It contains about 30 devices and for each device there are flat and not saturated images from which the reference fingerprints are extracted. Each of them is then compared with 20 natural image query fingerprints from all other devices.
 
 # Repository structure
 The respository is structured as follows:
@@ -107,17 +107,15 @@ In ```plots/``` folder there will be a ```VDNet/``` subdirectory with bar plots 
 
 
 
-# Project Documents
-- For a detailed description of the experiments and results obtained refer to the [report](/docs/report.pdf).
-- Project [presentation](/docs/final_presentation.pdf)
-- And also the VDID and VDNet [presentation](/docs/presentation.pdf)
+# Test results
+- For a detailed description of the experiments and results obtained please refer to our [report](/docs/report.pdf).
 
 
 # Tools and Techniques
-The main tools used in this work:
+Main tools used in this work:
 - VDID: a bayesian framework for denoising that can handle blind scenarios.
 - VDNet: uses a variational inference for non-iid  real-noise estimation and image denoising in a unique Bayesian Network.
-- PyCharm is an integrated development environment used in computer programming, specifically for the Python language [6].
+- PyCharm: an integrated development environment used in computer programming, specifically for the Python language [6].
 - Computers:
     - Operating System: Ubuntu 20.04.2 LTS
     - CPU:  Intel(R) Core(TM) i9-7940X CPU @ 3.10GHz
