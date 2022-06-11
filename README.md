@@ -1,7 +1,4 @@
-# Camera Identification task using VDNet and VDID
-
-![last commit](https://img.shields.io/github/last-commit/sim-pez/PRNU)
-![Python 3.8](https://img.shields.io/github/languages/top/sim-pez/PRNU)
+![last commit](https://img.shields.io/github/last-commit/sim-pez/PRNU) ![Python 3.8](https://img.shields.io/github/languages/top/sim-pez/PRNU)
 
 
 # Overview
