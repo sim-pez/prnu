@@ -1,12 +1,8 @@
 # Camera Identification task using VDNet and VDID
 
-![last commit](https://img.shields.io/github/last-commit/daikon899/PRNU)
-![Python 3.8](https://img.shields.io/github/languages/top/daikon899/PRNU)
+![last commit](https://img.shields.io/github/last-commit/sim-pez/PRNU)
+![Python 3.8](https://img.shields.io/github/languages/top/sim-pez/PRNU)
 
-- **Academic year:** 2020-2021
-- **Project title:** Camera Identification task using VDNet and VDID
-- **Students:** [Abdullah Chaudhry](https://github.com/chabdullah) and [Simone Pezzulla](https://github.com/daikon899)
-- **CFUs:** 6
 
 # Overview
 As  explained  in  [5],  digital  images  and  video  continue  to replace  their  analog  counterparts,  the  importance  of  reliable, inexpensive  and  fast  identification  of  digital  image  origin will  only  increase.  Reliable  identification  of  the  device  used to  acquire  a  particular  digital  image  would  especially  prove useful, for example, in the court for establishing the origin of images presented as evidence.
