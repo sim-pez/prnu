@@ -1,9 +1,7 @@
 ![last commit](https://img.shields.io/github/last-commit/sim-pez/PRNU) ![Python 3.8](https://img.shields.io/github/languages/top/sim-pez/PRNU)
 
 
-# Overview
-As explained in [5], digital images and video continue to replace their analog counterparts and the importance of reliable, inexpensive and fast  identification of digital image origin will only increase. 
-
+# Intro
 This project is based on the work of [2], the goal is to extract camera sensor’s fingerprint from captured images and compare this reference to other query  fingerprints in order to perform a camera identification task. We will use Photo-Response Non-Uniformity ([**PRNU**](https://en.wikipedia.org/wiki/Photo_response_non-uniformity)) extracted from flat and not saturated images as a unique fingerprint of digital camera and use Peak-correlation-to-energy (**PCE**) for the identification task. There are several different algorithms to extract fingerprints. In this report we extend the implementation provided in [2] by adding 2 new noise extraction methods: **VDNet**[1] and **VDID**[3]. 
 
 # VDNet
