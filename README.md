@@ -64,7 +64,7 @@ The respository is structured as follows:
 ## Installation
 
 ```
-git clone https://github.com/daikon899/PRNU
+git clone https://github.com/sim-pez/PRNU
 cd PRNU
 pip3 install -r requirements.txt
 ```
